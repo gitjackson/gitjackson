@@ -1,0 +1,36 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>ajax实现无刷新分页</title>
+<script type="text/javascript" src="ajax.js"></script>
+</head>
+<body>
+<center>
+<div id="fpage">
+数据加载中......
+</div>
+<hr width="100%">
+<script type="text/javascript">
+          function setpage(url){
+			  var obj = document.getElementById("fpage");
+			  var ajax = Ajax();
+			  ajax.get(url,function(Data){
+				  obj.innerHTML = data;
+				  });
+			  
+			  }
+		  
+		  
+		  
+		  
+</script>
+<script type="text/javascript">
+       document.write(new Date()+"<br>");
+       document.write(new Date()+"<br>");
+	   document.write(new Date()+"<br>");
+	   document.write(new Date()+"<br>");
+</script>
+</center>
+</body>
+</html>

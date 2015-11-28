@@ -1,0 +1,26 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>ajax中get和post实例</title>
+<script type="text/javascript" src="ajax.js"></script>
+<script type="text/javascript">
+var ajax=Ajax();
+/*
+ajax.get("server.php?username=zhangsan&email=aaa@bbb",function(data){
+	
+	alert(data);
+	});
+*/
+/*
+ajax.post("server.php","username=value&aaa=bbb",function(data){
+alert(data);
+});*/
+ajax.post("server.php",{username:"zs",age:10,sex:"nan"},function(data){
+	alert(data);
+	});
+</script>
+</head>
+<body>
+</body>
+</html>
